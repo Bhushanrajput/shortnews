@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShortNews</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>📰 ShortNews</h1>
+        <p>Latest news in short</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="filters">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Sports">Sports</option>
+            <option value="Business">Business</option>
+            <option value="Politics">Politics</option>
+            <option value="Entertainment">Entertainment</option>
+        </select>
+
+        <select id="stateFilter">
+            <option value="all">All States</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+        </select>
+
+        <select id="languageFilter">
+            <option value="all">All Languages</option>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Marathi">Marathi</option>
+        </select>
+
+        <select id="dateFilter">
+            <option value="all">All Dates</option>
+            <option value="today">Today</option>
+            <option value="yesterday">Yesterday</option>
+        </select>
+
+    </section>
+
+
+    <section class="news-section">
+
+        <div class="section-title">
+            <h2>Latest News</h2>
+            <span id="newsCount"></span>
+        </div>
+
+        <div id="newsContainer" class="news-grid"></div>
+
+        <div id="noNews" class="no-news">
+            No news found for selected filters.
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 ShortNews | DevOps Practice Project</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
